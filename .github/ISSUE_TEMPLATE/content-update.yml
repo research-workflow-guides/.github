@@ -1,0 +1,29 @@
+name: Content update
+description: Suggest a documentation fix, clarification, or new guide topic.
+title: "[Content]: "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: page
+    attributes:
+      label: Page or file
+      description: Link the page or name the file involved.
+      placeholder: https://research-workflow-guides.github.io/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should change?
+      description: Explain what is unclear, outdated, broken, or missing.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested fix
+      description: Share wording, links, examples, or context that would help.
+    validations:
+      required: false
+
